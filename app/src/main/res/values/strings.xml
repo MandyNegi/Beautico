@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Beautico</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="ligin_text">LOGIN</string>
+    <string name="pass">Password</string>
+    <string name="check_text">Remember Me</string>
+    <string name="pass_forgot">Forgot Password?</string>
+    <string name="btn_sign">SIGN IN</string>
+    <string name="sing_up">SIGN UP</string>
+</resources>

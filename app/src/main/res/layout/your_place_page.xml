@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash4"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/package_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#7efaf2f2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/img_grid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:minHeight="80dp"
+                            android:minWidth="80dp"
+                            android:src="@drawable/cleanups"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/img_grid1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#d57bff"
+                            android:minHeight="80dp"
+                            android:minWidth="80dp"
+                            android:src="@drawable/cleanups"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Cleanups"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/daily_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#7efaf2f2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+
+                        <ImageView
+                            android:id="@+id/img_daily1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="80dp"
+                            android:minWidth="80dp"
+                            android:src="@drawable/daily" />
+
+                        <ImageView
+                            android:id="@+id/img_daily2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#d57bff"
+                            android:minHeight="80dp"
+                            android:minWidth="80dp"
+                            android:src="@drawable/daily"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/textG2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Pedicure"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kids_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#7efaf2f2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/img_kidszone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="80dp"
+                            android:minWidth="80dp"
+                            android:src="@drawable/manicure"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/img_kidszone1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#d57bff"
+                            android:minHeight="80dp"
+                            android:minWidth="80dp"
+                            android:src="@drawable/manicure"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/textG3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Manicure"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/first_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7efaf2f2"
+                android:minHeight="230dp"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true">
+
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/padicure_lyout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7efaf2f2"
+                android:minHeight="230dp"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/padicure_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/manicure_lyout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7efaf2f2"
+                android:minHeight="230dp"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/manicure_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--////////////////////////////END First Row/////////////////////////////////////////////////-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/wax_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_waxing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/wax"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_waxing1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/wax"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Waxing"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/handfeet_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_hand_feet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/threading"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_hand_feet1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/threading"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Threading"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hairstyl_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_hairstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/hair"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_hairstyle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/hair"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Hair Styling"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/spa_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_spa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/mehndi"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_spa1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/mehndi"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Mehndi"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/makeup_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_makeup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/makeup"
+                        android:visibility="visible" />
+
+
+                    <ImageView
+                        android:id="@+id/img_makeup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/makeup"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Makeup"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facial_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_facial"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/facial"
+                        android:visibility="visible" />
+
+
+                    <ImageView
+                        android:id="@+id/img_facial1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/facial"
+                        android:visibility="gone" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Facial"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/haircare_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_haircare"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/hair"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_haircare1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/hair"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Hair Care"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bleech_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_bleech"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/bleech"
+                        android:visibility="visible" />
+
+
+                    <ImageView
+                        android:id="@+id/img_bleech1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/bleech"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Bleech"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/skincare_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_skincare"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/tattu"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_skincare1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/tattu"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tattu"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+

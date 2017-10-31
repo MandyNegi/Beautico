@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash3"
+    android:orientation="vertical"
+    tools:context="com.example.creativity.beautico.Activity.SignUp">
+
+    <include layout="@layout/toolbar_second" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/boy"
+            android:drawablePadding="5dp"
+            android:hint="First Name"
+            android:singleLine="true"
+            android:textColorHint="#fff"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/boy"
+            android:drawablePadding="5dp"
+            android:hint="Email Address"
+            android:singleLine="true"
+            android:textColorHint="#fff"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/bc"
+            android:drawablePadding="10dp"
+            android:hint="Mobile Number"
+            android:singleLine="true"
+            android:textColorHint="#fff"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/address_act"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/house"
+                android:drawablePadding="10dp"
+                android:hint="Address"
+                android:singleLine="true"
+                android:textColorHint="#fff"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/mahal" />
+
+                <Spinner
+                    android:id="@+id/spinner1_act_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:cropToPadding="true"
+                    android:src="@drawable/bulding" />
+
+                <Spinner
+                    android:id="@+id/spinner_actcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#7efaf2f2"
+            android:text="SignUp"
+            android:textColor="@color/colorblack"
+
+            />
+
+    </LinearLayout>
+    <!--    <android.support.design.widget.FloatingActionButton
+            app:fabSize="mini"
+            android:scaleType="center"
+            android:id="@+id/btnFab_acttount"
+            android:background="@color/white"
+            android:layout_marginRight="5dp"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/pentwo"/>-->
+
+
+</LinearLayout>

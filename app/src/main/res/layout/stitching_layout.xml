@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash4"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/package_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_salwar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/stitching"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_salwar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/cleanups"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="STITCHING SALWAR SUIT"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/daily_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7efaf2f2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_suit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/suit" />
+
+                    <ImageView
+                        android:id="@+id/img_suit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#d57bff"
+                        android:minHeight="80dp"
+                        android:minWidth="80dp"
+                        android:src="@drawable/daily"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/textG2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="STITCHING BLOUSE"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7efaf2f2"
+            android:minHeight="230dp"
+            android:visibility="gone">
+
+
+            <ListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true">
+
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/padicure_lyout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7efaf2f2"
+            android:minHeight="230dp"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/padicure_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/manicure_lyout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7efaf2f2"
+            android:minHeight="230dp"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/manicure_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--////////////////////////////END First Row/////////////////////////////////////////////////-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/wax_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#7efaf2f2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/img_blouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/blouse"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_blouse1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#d57bff"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/wax"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="STICHING OF SHIRT"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/handfeet_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#7efaf2f2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/img_peticot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/threading"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_peticot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#d57bff"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/threading"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="STITCHING OF PETOCAT"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

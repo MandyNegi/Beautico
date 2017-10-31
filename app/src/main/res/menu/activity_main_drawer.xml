@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/service"
+            android:title="Services" />
+        <item
+
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/opp"
+            android:title="My appointments" />
+        <item
+            android:id="@+id/hist"
+            android:icon="@drawable/history"
+            android:title="Booking history" />
+        <item
+            android:id="@+id/If"
+            android:icon="@drawable/invitefre"
+            android:title="Invite friends" />
+        <item
+            android:id="@+id/conct"
+            android:icon="@drawable/cont"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/sendfeed"
+            android:icon="@drawable/feed"
+            android:title="Send feedback" />
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
